@@ -18,7 +18,7 @@ export function Sidebar() {
     <div className="relative h-screen">
       <div className="absolute left-0 h-full rounded-tr-2xl shadow-div-menu p-6">
         {showExtendMenu ? (
-          <div className="flex flex-col p space-y-10 h-auto justify-center items-center">
+          <div className="flex flex-col p space-y-10 justify-center items-center">
             <button onClick={handleClick}>
               <img
                 src={iconChevronRight}
@@ -45,15 +45,27 @@ export function Sidebar() {
             </div>
             <div className="flex flex-col justify-start w-full space-y-6">
               <div className="flex flex-row space-x-2 items-center font-bold">
-                <img src={iconContact} alt="Ícone de contatos" />
+                <img
+                  src={iconContact}
+                  alt="Ícone de contatos"
+                  className="w-[40px] h-[40px]"
+                />
                 <h2>Contatos</h2>
               </div>
               <div className="flex flex-row space-x-2 items-center font-bold">
-                <img src={iconHistory} alt="Histórico de contatos" />
+                <img
+                  src={iconHistory}
+                  alt="Histórico de contatos"
+                  className="w-[40px] h-[40px]"
+                />
                 <h2>Histórico de Chamadas</h2>
               </div>
               <div className="flex flex-row space-x-2 items-center font-bold">
-                <img src={iconProfile} alt="Perfil do usuário" />
+                <img
+                  src={iconProfile}
+                  alt="Perfil do usuário"
+                  className="w-[40px] h-[40px]"
+                />
                 <h2>Meu Perfil</h2>
               </div>
             </div>
