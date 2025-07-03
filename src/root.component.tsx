@@ -1,5 +1,5 @@
 import "./frontend/style/index.css";
-import { Sidebar } from "./frontend/page/Sidebar";
+import { Sidebar } from "./frontend/pages/Sidebar";
 
 export default function Root() {
   return (
