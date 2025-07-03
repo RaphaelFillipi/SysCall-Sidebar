@@ -3,7 +3,7 @@ import Root from "./root.component";
 
 describe("Root component", () => {
   it("should be in the document", () => {
-    const { getByText } = render(<Root name="Testapp" />);
-    expect(getByText(/Contatos/i)).toBeInTheDocument();
+    const { getByAltText } = render(<Root name="Testapp" />);
+    expect(getByAltText(/Ícone de contatos/i)).toBeInTheDocument();
   });
 });
